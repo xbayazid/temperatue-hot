@@ -23,6 +23,7 @@ const setWeatherText = (id, text) =>{
 document.getElementById('btn-search').addEventListener('click', function(){
     const searchField = document.getElementById('search-field');
     const city = searchField.value;
+    searchField.value = '';
     //set city
     document.getElementById('city').innerText = city;
 
